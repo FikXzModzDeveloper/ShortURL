@@ -1,3 +1,4 @@
+// ganti require() dengan import
 import { kv } from '@vercel/kv';
 import { nanoid } from 'nanoid';
 
