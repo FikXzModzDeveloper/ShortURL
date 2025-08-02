@@ -4,5 +4,5 @@ export default function handler(req, res) {
   const longUrl = global.store[code];
 
   if (!longUrl) return res.status(404).send('Not found');
-  res.redirect(301, longUrl);
+  res.redirect(308, longUrl);   // permanent redirect
 }
