@@ -1,6 +1,6 @@
 {
   "name": "shorturl-vercel",
-  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "@vercel/kv": "^1.0.1",
     "nanoid": "^4.0.2"
