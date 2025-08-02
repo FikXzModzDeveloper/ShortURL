@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   const code = Math.random().toString(36).substring(2, 8);
   const shortUrl = `https://${req.headers.host}/${code}`;
 
-  // In-memory store, survives per-invocation
+  // survive cold-start
   global.store = global.store || {};
   global.store[code] = longUrl;
 
